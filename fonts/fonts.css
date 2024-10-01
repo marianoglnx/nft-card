@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'outfit-light';
+    src: url(../fonts/Outfit-Light.ttf); /*300*/
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(../fonts/Outfit-Regular.ttf); /*400*/
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'outfit-semibold';
+    src: url(../fonts/Outfit-SemiBold.ttf); /*600*/
+    font-display: swap;
+}

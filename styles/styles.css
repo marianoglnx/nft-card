@@ -1,0 +1,142 @@
+:root {
+
+    --softBlue:     hsl(215, 51%, 70%);
+    --cyan:         hsl(178, 100%, 50%);
+    --veryDarkBlue: hsl(217, 54%, 11%); /* (main BG)*/
+    --darkBlue:     hsl(216, 50%, 16%); /* (card BG)*/
+    --blue:         hsl(215, 32%, 27%); /* (line)*/
+    --white:        hsl(0, 0%, 100%);
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+#view {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view .card {
+    width: 90%;
+    max-width: 350px;
+    background-color: var(--darkBlue);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card .card-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(../images/image-equilibrium.jpg);
+    margin-bottom: 25px;
+}
+
+.card .hover-image {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: auto;
+    background-color: var(--cyan);
+    background-image: url(../images/icon-view.svg);
+    cursor: pointer;
+    transition: opacity .1s ease-in;
+}
+
+.card .hover-image:hover {
+    opacity: 0.4;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 18px;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+h1:hover {
+    color: var(--cyan);
+}
+
+.card p.description {
+    color: var(--softBlue);
+    margin-bottom: 20px;
+    font-family: 'outfit-light';
+}
+
+.card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details .value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .details .value span {
+    color: var(--cyan);
+    font-family: 'outfit-semibold';
+}
+
+.card .details .time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .details .time span {
+    color: var(--softBlue);
+}
+
+.card .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--softBlue);
+    opacity: 0.3;
+    margin: 20px 0;
+}
+
+.card .user {
+    display: flex;
+    align-items: center;
+}
+
+.user .photo {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/image-avatar.png);
+    border: 2px solid white;
+    margin-right: 16px;
+}
+
+.user p {
+    color: var(--softBlue);
+    font-family: 'outfit-light';
+    font-size: 16px;
+}
+
+.user span {
+    color: var(--white);
+    font-family: 'outfit-light';
+    font-size: 16px;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.user span:hover {
+    color: var(--cyan);
+}
